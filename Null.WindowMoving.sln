@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.31911.260
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Null.WindowMoving", "Null.WindowMoving\Null.WindowMoving.csproj", "{1D96F228-9086-4548-AD5A-CBE359B62DFA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Null.WindowMoving.Cons", "Null.WindowMoving.Cons\Null.WindowMoving.Cons.csproj", "{EE422919-F57A-41F4-8341-5CECDABBB65F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{1D96F228-9086-4548-AD5A-CBE359B62DFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1D96F228-9086-4548-AD5A-CBE359B62DFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1D96F228-9086-4548-AD5A-CBE359B62DFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE422919-F57A-41F4-8341-5CECDABBB65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE422919-F57A-41F4-8341-5CECDABBB65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE422919-F57A-41F4-8341-5CECDABBB65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE422919-F57A-41F4-8341-5CECDABBB65F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
