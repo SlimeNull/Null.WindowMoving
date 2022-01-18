@@ -10,7 +10,7 @@ namespace Null.WindowMoving.Cons
 {
     internal class Program
     {
-        static bool hotKeyDown = false;
+        static bool hotkeyDown = false;
 
         static IntPtr currentWindow;
         static int windowStartPointX, windowStartPointY;
@@ -19,10 +19,10 @@ namespace Null.WindowMoving.Cons
         static void TestHotkey()
         {
             const int LWIN = 0x5B, LSHIFT = 0xA0;
-            bool valueBefore = hotKeyDown;
-            hotKeyDown = (WinApis.GetAsyncKeyState(LWIN) & WinApis.GetAsyncKeyState(LSHIFT)) != 0;
+            bool valueBefore = hotkeyDown;
+            hotkeyDown = (WinApis.GetAsyncKeyState(LWIN) & WinApis.GetAsyncKeyState(LSHIFT)) != 0;
 
-            if (hotKeyDown && !valueBefore)
+            if (hotkeyDown && !valueBefore)
             {
                 currentWindow = WinApis.GetForegroundWindow();
                 if (WinApis.GetCursorPos(out Point mouseP) && WinApis.GetWindowRect(currentWindow, out Rect rect))
@@ -34,14 +34,14 @@ namespace Null.WindowMoving.Cons
                 }
                 else
                 {
-                    hotKeyDown = false;
+                    hotkeyDown = false;
                 }
             }
         }
 
         static void ProcessWindowMoving()
         {
-            if (hotKeyDown)
+            if (hotkeyDown)
             {
                 WinApis.GetCursorPos(out Point currentMousePoint);
                 int offsetX = currentMousePoint.X - mouseStartPointX,
